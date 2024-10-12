@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPalabra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa la palabra en español"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/borde_texto"
+        android:minHeight="36dp"
+        android:textSize="28sp"/>
+
+    <Button
+        android:id="@+id/buttonTraducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Traducir"
+        android:layout_marginBottom="18sp"
+        android:background="@drawable/boton_traducir" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Volver"
+        android:visibility="gone"
+        android:layout_marginBottom="18sp"
+        android:background="@drawable/boton_volver" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="28sp" />
+
+    <ImageView
+        android:id="@+id/imageViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_description" />
+
+</LinearLayout>
